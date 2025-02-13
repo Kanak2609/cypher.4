@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyber Law Assistant | Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="background">
+        <div class="overlay"></div> <!-- Overlay for readability -->
+        <div class="login-container">
+            <h2>Cyber Law Assistant</h2>
+
+            <!-- Login Form -->
+            <div id="loginForm">
+                <h3>Login</h3>
+                <input type="email" id="loginEmail" placeholder="Enter your email">
+                <input type="password" id="loginPassword" placeholder="Enter your password">
+                <button id="loginBtn">Login</button>
+                <p>Don't have an account? <a href="#" id="toggleSignup">Sign up</a></p>
+            </div>
+
+            <!-- Signup Form -->
+            <div id="signupForm" style="display: none;">
+                <h3>Sign Up</h3>
+                <input type="email" id="signupEmail" placeholder="Enter your email">
+                <input type="password" id="signupPassword" placeholder="Create a password">
+                <button id="signupBtn">Sign Up</button>
+                <p>Already have an account? <a href="#" id="toggleLogin">Login</a></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="auth.js"></script>
+</body>
+</html>
