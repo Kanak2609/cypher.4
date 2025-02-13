@@ -1,0 +1,182 @@
+/* General Styles */
+body {
+    background: url('https://media.gettyimages.com/id/1298982587/vector/abstract-technical-background-lock.jpg?s=612x612&w=0&k=20&c=TPWHS8pRGAyfEgKcNicN_5yG-zwulq_PgGFu4Z9jKyA=') no-repeat center center/cover;
+    font-family: 'Orbitron', sans-serif;
+    color: #00ffcc;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    position: relative;
+}
+
+/* Background Overlay to Reduce Transparency */
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2); /* Adjust transparency */
+    z-index: -1;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background: rgba(0, 31, 63, 0.9);
+    color: white;
+    border: 3px solid #00ffcc;  /* Added border */
+    box-shadow: 0px 0px 10px #00ffcc;
+}
+
+/* Cyberlaw AI Logo */
+.logo {
+    font-size: 32px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    color: #00ffcc;
+}
+
+/* Navigation Menu */
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #49e4c7;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ff0044;
+}
+
+/* Secure Your Digital Rights - Centered */
+.glow-text {
+    font-size: 56px;
+    font-weight: 900;
+    text-shadow: 0px 0px 20px #292c28;
+    text-transform: uppercase;
+    color: #b8cea9;
+    text-align: center;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Main Container */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 80px); /* Adjusting for header height */
+    text-align: center;
+}
+
+/* Button */
+.btn {
+    display: inline-block;
+    padding: 18px 35px;
+    background: #00ffcc;
+    color: #001f3f;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 22px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #ff0044;
+    color: white;
+    box-shadow: 0px 0px 15px #ff0044;
+}
+
+/* Login & Signup Pages */
+.login-container {
+    width: 40%;
+    margin: 100px auto;
+    padding: 40px;
+    background: rgba(0, 31, 63, 0.9);
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 0px 20px rgba(0, 255, 204, 0.5);
+}
+
+.login-title {
+    font-size: 36px;
+    font-weight: bold;
+    color: #00ffcc;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-size: 22px;
+    color: white;
+    margin-top: 10px;
+    text-align: left;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    font-size: 20px;
+    margin-top: 5px;
+    border: 2px solid #00ffcc;
+    border-radius: 6px;
+    background: #001f3f;
+    color: white;
+}
+
+.login-btn {
+    width: 100%;
+    padding: 15px;
+    font-size: 24px;
+    font-weight: bold;
+    background: #00ffcc;
+    color: #001f3f;
+    border: none;
+    border-radius: 6px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.login-btn:hover {
+    background: #ff0044;
+    color: white;
+}
+
+p {
+    margin-top: 15px;
+    font-size: 20px;
+}
+
+p a {
+    color: #00ffcc;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+p a:hover {
+    color: #ff0044;
+}

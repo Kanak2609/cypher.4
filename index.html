@@ -3,36 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cyber Law Assistant | Login</title>
+    <title>CyberLaw AI</title>
     <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
 
-    <div class="background">
-        <div class="overlay"></div> <!-- Overlay for readability -->
-        <div class="login-container">
-            <h2>Cyber Law Assistant</h2>
+    <header>
+        <div class="logo">CyberLaw AI</div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-            <!-- Login Form -->
-            <div id="loginForm">
-                <h3>Login</h3>
-                <input type="email" id="loginEmail" placeholder="Enter your email">
-                <input type="password" id="loginPassword" placeholder="Enter your password">
-                <button id="loginBtn">Login</button>
-                <p>Don't have an account? <a href="#" id="toggleSignup">Sign up</a></p>
-            </div>
-
-            <!-- Signup Form -->
-            <div id="signupForm" style="display: none;">
-                <h3>Sign Up</h3>
-                <input type="email" id="signupEmail" placeholder="Enter your email">
-                <input type="password" id="signupPassword" placeholder="Create a password">
-                <button id="signupBtn">Sign Up</button>
-                <p>Already have an account? <a href="#" id="toggleLogin">Login</a></p>
-            </div>
-        </div>
+    <div class="main-content">
+        <h1 class="glow-text">Secure Your Digital Rights</h1>
+        <p>Understand and navigate cyber laws with ease.</p>
+        <a href="login.html" class="btn">Get Started</a>
     </div>
 
-    <script src="auth.js"></script>
 </body>
 </html>
